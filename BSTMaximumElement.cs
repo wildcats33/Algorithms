@@ -10,7 +10,7 @@
 Question 1. Find the max element in the binary tree.
 */
 int Maximum(Node n)
-{
+{ 
     if(n == null) {
         return Int32.MinValue;
     }
