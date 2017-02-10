@@ -10,27 +10,27 @@ Input: 9 => Output: 7
 Input: 1 ==> Output: 2
  */
 
- public Node FindParent(int i)
+ public Node FindParent(object value)
  {
-    return FindParent(null, head, i);
+    return FindParent(null, head, value);
  }
 
- public Node FindParent(Node parent, Node child, int i)
+ public Node FindParent(Node parent, Node child, object value)
  {
      if(child == null)
      {
         return null;
      }
 
-     if(child.Value == i)
+     if(child.Value.ComparetTo(value) == 0)
      {
          return parent;
      }
 
-     var result = FindParent(child, child.Left, i);
+     var result = FindParent(child, child.Left, value);
      if(leftResult == null)
      {
-        result = FindParent(child, child.Right, i);
+        result = FindParent(child, child.Right, value);
      }
 
      return result;
