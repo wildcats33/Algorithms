@@ -1,4 +1,4 @@
-Question 3. Find the path from root to leaf, which has minimum distance. (5, 3, 2)
+//Question 3. Find the path from root to leaf, which has minimum distance. (5, 3, 2)
 
 public class Result: IComparable<Result>
 {
