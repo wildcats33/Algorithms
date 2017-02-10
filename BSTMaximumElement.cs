@@ -19,11 +19,11 @@ int Maximum(Node n)
     int maxRight = Maximum(n.Right);
 
     int max = n.Value;
-    if(max < maxLeft) {
+    if(n.Value < maxLeft) {
         max = maxLeft;
     }
 
-    if(max < maxRight) {
+    if(n.Value < maxRight) {
         max = maxRight;
     }
 
