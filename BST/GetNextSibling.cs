@@ -19,7 +19,7 @@ Output:
 */
 
 public void SetNextSibling(Node parent) {
-  if(node.Left == null && node.Right == null) {
+  if(node == null || node.Left == null && node.Right == null) {
     return;
   }
 
